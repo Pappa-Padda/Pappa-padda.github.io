@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     .w3-row-padding img {margin-bottom: 12px}
@@ -20,12 +21,7 @@
   </head>
 <body class="w3-black">
   
-<script>
-  const profilePicLink = "https://raw.githubusercontent.com/Pappa-Padda/Pappa-padda.github.io/main/assets/ProfilePic.png";
-  document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("profile-pic").src = profilePicLink;
-  });
-</script>
+
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -36,8 +32,12 @@
     <p>HOME</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
+    <i class="fa fa-fw fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
+  </a>
+  <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-fw fa-briefcase w3-xxlarge"></i>
+    <p>EXPERIENCE</p>
   </a>
   <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
@@ -58,6 +58,7 @@
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
+    <a href="#experience" class="w3-bar-item w3-button" style="width:20% !important">EXPERIENCE</a>
     <a href="#skills" class="w3-bar-item w3-button" style="width:20% !important">SKILLS</a>
     <a href="#projects" class="w3-bar-item w3-button" style="width:20% !important">PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
@@ -65,7 +66,7 @@
 </div>
 
 <!-- Page Content -->
-<div class="w3-padding-large" id="main">
+<div class=" w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo">Jean-Pierre Retief</h1>
@@ -74,104 +75,272 @@
   </header>
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Jean-Pierre Retief</h2>
+  <div class="w3-content w3-padding-16 w3-justify w3-text-grey" id="about">
+    <h2 class="w3-text-light-grey">Mr. Jean-Pierre Retief</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
+    <p class="w3-large w3-text-light-grey">I am currently a 3rd year student at NWU. I enjoy building software apps from casual games to something that brings worth to a business scenario.
+      <br>
+       I also enjoy philosophy (apologetics), music (playing piano and composing, mixing) and video editing. The dream would be to to work on projects that integrate these passions.
+       A stable programming job will hopefully fuel my other passions and one day...</p>
+
+       <!-- Download Resume -->
+      <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+
+          <button class="w3-button w3-light-grey w3-padding-large w3-section" action="https://github.com/Pappa-Padda/Pappa-padda.github.io/blob/main/d:/My%20CV/Pappa-padda.github.io/Jean-Pierre_Retief_Resume.pdf">
+            <i class="fa fa-download"></i> Download Resume
+          </button>
+        <!-- End About Section -->
+  </div>
+
+  <!-- Experience Section -->
+<div class="w3-padding-16 w3-content w3-justify w3-text-grey" id="experience">
+  <h2 class="w3-text-light-grey">My Experience</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+  <!-- FINWorks Experience -->
+  <div class="experience-title">
+  <a href="https://finworks.biz/" target="_blank">
+    <img src="https://media.licdn.com/dms/image/v2/C4E0BAQFLXIohRYWyjA/company-logo_100_100/company-logo_100_100/0/1630608629745/finworks_logo?e=1756339200&v=beta&t=EeEvgJWZ-OZocOsHk8ltiWig30YkKnjHPmCmc0tkeu8" alt="Finworks Logo" />
+  </a>
+  <p>Junior Software Developer at Finworks (Pty) Ltd</p>
+  <span class="experience-toggle-arrow">&#9654;</span>
+</div>
+  <div class="experience-body">
+    <p class="w3-text-light-grey">Pretoria, South Africa (Remote)<br>Nov 2021 - Nov 2022</p>
+    <p class="w3-small w3-text-light-grey">I was employed at Finworks for a year:</p>
+    <ul class="w3-ul w3-small w3-text-light-grey">
+      <li>Object-oriented design, web styling, Git (Scrum)</li>
+      <li>Linux-based dev environment</li>
+      <li>Full SDLC involvement: from requirements to release</li>
+      <li>Debugging, performance tuning</li>
+      <li>Documentation for IT staff & future projects</li>
+    </ul>
+  </div>
+
+  <!-- Matogen Internship -->
+  <div class="experience-title">
+  <a href="https://matogen.com" target="_blank">
+    <img src="https://media.licdn.com/dms/image/v2/C4D0BAQG8khBzjYep-Q/company-logo_100_100/company-logo_100_100/0/1631376332284?e=1756339200&v=beta&t=-7ryZ6U2kHZDCb2ojFx5V98ctv1E8rCI_1Qwt0Ztr1g" alt="Matogen Logo" />
+  </a>
+  <p>Web Developer Internship at Matogen Corporate Web Development</p>
+  <span class="experience-toggle-arrow">&#9654;</span>
+</div>
+<div class="experience-body">
+    <p class="w3-text-light-grey">Potchefstroom, South Africa (Remote)<br>Nov 2024 - Feb 2025</p>
+    <p class="w3-small w3-text-light-grey">Internship with two full-stack dev projects:</p>
+
+    <b class="w3-small w3-text-light-grey">🔹 Project 1 - Full-Stack Intro:</b>
+    <ul class="w3-ul w3-small w3-text-light-grey">
+      <li>OOP, data structures, JSON</li>
+      <li>SPA (Single Page Application) principles, REST APIs</li>
+      <li>Front-end: Angular | Back-end: Python</li>
+      <li>DB: PostgreSQL</li>
+      <li>Token security basics, Git version control</li>
+    </ul>
+
+    <b class="w3-small w3-text-light-grey">🔹 Project 2 - WhatsApp Vehicle Tracker Bot:</b>
+    <ul class="w3-ul w3-small w3-text-light-grey">
+      <li><b>Week 1:</b> Setup env, WhatsApp API, basic messaging</li>
+      <li><b>Week 2:</b> Vehicle listing, location requirements, errors</li>
+      <li><b>Week 3:</b> Status updates, user management, advanced errors</li>
+      <li><b>Week 4:</b> Testing, documentation, deployment prep</li>
+    </ul>
+  </div>
+</div>
+
+
+
+  <!-- Skills Section -->
+    <div class="w3-padding-16 w3-content w3-justify w3-text-grey">
+    <h2 class="w3-text-light-grey" id="skills">My Skills</h2>
+    <hr style="width:200px" class="w3-opacity">
+<!-- Software Development Tools -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Software Development Tools</h3>
+
+    <div class="skill-columns">
+      <div class="skill-row">
+        <span class="skill-label">HTML</span>
+        <div class="skill-bar-bg"> <div class="skill-bar-fill" data-width="75%">75%</div></div>
       </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
+
+      <div class="skill-row">
+        <span class="skill-label">CSS</span>
+        <div class="skill-bar-bg"> <div class="skill-bar-fill" data-width="75%">75%</div></div>
       </div>
     </div>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-    
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
+    <div class="skill-columns">     
+      <div class="skill-row">
+        <span class="skill-label">React</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="20%">20%</div></div>
       </div>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
+      <div class="skill-row">
+        <span class="skill-label">Angular</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="50%">50%</div></div>
       </div>
-    <!-- End Grid/Pricing tables -->
     </div>
+
+    <div class="skill-columns">  
+      <div class="skill-row">
+        <span class="skill-label">ASP.NET</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75%">75%</div></div>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-label">GitHub</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75%">75%</div></div>
+      </div>
+    </div>  
+
+      <!-- Software Languages -->
+      <h3 class="w3-padding-16 w3-text-light-grey">Software Languages</h3>
+    <div class="skill-columns"> 
+      <div class="skill-row">
+        <span class="skill-label">C++</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="50%">50%</div></div>
+      </div>
+      
+      <div class="skill-row">
+        <span class="skill-label">C#</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="50%">50%</div></div>
+      </div>
+    </div>
+
+    <div class="skill-columns"> 
+      <div class="skill-row">
+        <span class="skill-label">Java</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75%">75%</div></div>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-label">Python</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75%">75%</div></div>
+      </div>
+    </div>
+
+    <div class="skill-columns"> 
+      <div class="skill-row">
+        <span class="skill-label">Smalltalk</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75%">75%</div></div>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-label">SQL</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85%">85%</div></div>
+      </div>
+    </div>  
+
+    <div class="skill-columns"> 
+      <div class="skill-row">
+        <span class="skill-label">Visual Studio Code</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90%">90%</div></div>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-label">Pharo IDE</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95%">95%</div></div>
+      </div>  
+    </div>
+
+      <!-- Media Skills -->
+      <h3 class="w3-padding-16 w3-text-light-grey">Media Skills</h3>
+    <div class="skill-columns"> 
+      <div class="skill-row">
+        <span class="skill-label">Musescore</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75%">75%</div></div>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-label">Mixing Station</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80%">80%</div></div>
+      </div>
+    </div>
+      
+    <div class="skill-columns"> 
+      <div class="skill-row">
+        <span class="skill-label">Other DAWs</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="25%">25%</div></div>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-label">Capcut</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95%">95%</div></div>
+      </div>
+    </div>
+
+    <div class="skill-columns"> 
+      <div class="skill-row">
+        <span class="skill-label">Davinci Resolve</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="40%">40%</div></div>
+      </div>
+    </div>
+
+      <!-- Spoken Languages -->
+      <h3 class="w3-padding-16 w3-text-light-grey">Spoken Languages</h3>
+
+    <div class="skill-columns"> 
+      <div class="skill-row">
+        <span class="skill-label">English</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95%">95%</div></div>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-label">Afrikaans</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="98%">98%</div></div>
+      </div>
+    </div>
+      
+    <div class="skill-columns">
+      <div class="skill-row">
+        <span class="skill-label">German</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="40%">40%</div></div>
+      </div>
+    </div>  
+
+      <!-- Personal & Other Skills -->
+      <h3 class="w3-padding-16 w3-text-light-grey">Personal & Other Skills</h3>
+
+    <div class="skill-columns"> 
+      <div class="skill-row">
+        <span class="skill-label">Apologetics & Philosophy</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="60%">60%</div></div>
+      </div>
     
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>John Doe saved us from a web disaster.</p><br>
-    
-    <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than John Doe.</p>
-  <!-- End About Section -->
+      <div class="skill-row">
+        <span class="skill-label">Creative <br>(egg. writing poems, music)</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="65%">65%</div></div>
+      </div>
+    </div>
+
+    <div class="skill-columns"> 
+      <div class="skill-row">
+        <span class="skill-label">Meticulous with detail</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75%">75%</div></div>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-label">Organized</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90%">90%</div></div>
+      </div>
+    </div>
+
+    <div class="skill-columns"> 
+      <div class="skill-row">
+        <span class="skill-label">Confrontational <br> or Direct</span>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90%">90%</div></div>
+      </div>
+    </div>
+<!-- End Skills Section -->
+    <br>
+    <p class="w3-large w3-text-light-grey">I am always eager to learn new skills and improve my existing ones. I believe in continuous learning and strive to stay updated with the latest technologies.</p>
+    <p class="w3-large w3-text-light-grey">Feel free to reach out if you have any questions or would like to collaborate on a project.</p>
   </div>
   
+    
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
+  <div class="w3-padding-16 w3-content" id="projects">
+    <h2 class="w3-text-light-grey">My Projects</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
@@ -194,16 +363,16 @@
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+  <div class="w3-padding-16 w3-content w3-text-grey" id="contact">
     <h2 class="w3-text-light-grey">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Potchefstroom, South Africa</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: jpretief84@gmail.com</p>
     </div><br>
-    <p>Let's get in touch. Send me a message:</p>
+    
+    <!-- <p>Let's get in touch. Send me a message:</p>
 
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
@@ -216,24 +385,98 @@
         </button>
       </p>
     </form>
+    -->
   <!-- End Contact Section -->
   </div>
   
 <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
- <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
- <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
+<footer class="w3-content w3-text-grey w3-xlarge">
+  <a id="facebook-link" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-facebook-official w3-hover-opacity" id="facebook-link"></i>
+  </a> 
+  <a id="instagram-link" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-instagram w3-hover-opacity" id="instagram-link"></i>
+  </a>
+  <a id="github-link" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-github w3-hover-opacity" id="github-link"></i>
+  </a>
+  <a id="linkedin-link" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-linkedin w3-hover-opacity" id="linkedin-link"></i>
+  </a>
+  <a id="youtube-link" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-youtube w3-hover-opacity" id="youtube-link"></i>
+  </a> 
+  <p class="w3-small">Last updated: July 2025</p>
+  <p class="w3-small">Template inspired by <a href="https://www.w3schools.com/spaces" target="_blank" class="w3-hover-text-green">W3Schools Spaces</a></p>
  <!-- End footer -->
 </footer>
 
 <!-- END PAGE CONTENT -->
 </div>
+
+<!-- Load JS links file -->
+<script src="assets/js/links.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("profile-pic").src = siteLinks.profilePic;
+    document.getElementById("github-link").href = siteLinks.github;
+    document.getElementById("linkedin-link").href = siteLinks.linkedin;
+    document.getElementById("email-link").href = siteLinks.email;
+    document.getElementById("instagram-link").href = siteLinks.instagram;
+    document.getElementById("youtube-link").href = siteLinks.youtube;
+    document.getElementById("facebook-link").href = siteLinks.facebook;
+  });
+</script>
+
+<!-- Toggle Sections -->
+ <script>
+  // Skills toggle remains the same
+  document.querySelectorAll('.toggle-header').forEach(header => {
+    header.addEventListener('click', () => {
+      header.nextElementSibling.classList.toggle('show');
+    });
+  });
+
+  // Toggle arrows for experience
+  document.querySelectorAll('.experience-title').forEach(title => {
+    const arrow = title.querySelector('.experience-toggle-arrow');
+    const body = title.nextElementSibling;
+
+    arrow.addEventListener('click', () => {
+      body.classList.toggle('show');
+      arrow.classList.toggle('rotate');
+    });
+  });
+</script>
+
+<!-- Skill Bar Animation -->
+<script>
+  function animateSkillBars() {
+    const bars = document.querySelectorAll('.skill-bar-fill');
+    bars.forEach(bar => {
+      const target = bar.getAttribute('data-width');
+      bar.style.width = target;
+    });
+  }
+
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function onScroll() {
+    const section = document.querySelector('.skill-bar-fill');
+    if (isInViewport(section)) {
+      animateSkillBars();
+      window.removeEventListener('scroll', onScroll);
+    }
+  }
+
+  window.addEventListener('scroll', onScroll);
+  window.addEventListener('load', onScroll);
+</script>
+
+
 
 </body>
 </html>
