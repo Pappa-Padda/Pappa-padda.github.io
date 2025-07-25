@@ -21,11 +21,10 @@
   </head>
 <body class="w3-black">
 
-
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img id="profile-pic" alt="ProfilePic" style="width:100%;">
+  <img id="profile-pic" src="https://raw.githubusercontent.com/Pappa-Padda/Pappa-padda.github.io/main/assets/ProfilePic.png" alt="ProfilePic" style="width:100%;">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
@@ -100,7 +99,7 @@
   <hr style="width:200px" class="w3-opacity">
 
   <!-- FINWorks Experience -->
-  <div class="experience-title">
+  <div class="experience-title" onclick="toggleExperience(this)">
   <a href="https://finworks.biz/" target="_blank">
     <img src="https://media.licdn.com/dms/image/v2/C4E0BAQFLXIohRYWyjA/company-logo_100_100/company-logo_100_100/0/1630608629745/finworks_logo?e=1756339200&v=beta&t=EeEvgJWZ-OZocOsHk8ltiWig30YkKnjHPmCmc0tkeu8" alt="Finworks Logo" />
   </a>
@@ -120,7 +119,7 @@
   </div>
 
   <!-- Matogen Internship -->
-  <div class="experience-title">
+  <div class="experience-title" onclick="toggleExperience(this)">
   <a href="https://matogen.com" target="_blank">
     <img src="https://media.licdn.com/dms/image/v2/C4D0BAQG8khBzjYep-Q/company-logo_100_100/company-logo_100_100/0/1631376332284?e=1756339200&v=beta&t=-7ryZ6U2kHZDCb2ojFx5V98ctv1E8rCI_1Qwt0Ztr1g" alt="Matogen Logo" />
   </a>
@@ -149,8 +148,6 @@
     </ul>
   </div>
 </div>
-
-
 
   <!-- Skills Section -->
     <div class="w3-padding-16 w3-content w3-justify w3-text-grey">
@@ -374,112 +371,68 @@
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Potchefstroom, South Africa</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: jpretief84@gmail.com</p>
     </div><br>
-    
-    <!-- <p>Let's get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-    -->
-  <!-- End Contact Section -->
   </div>
   
 <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
 <footer class="w3-content w3-text-grey w3-xlarge">
-  <a id="facebook-link" target="_blank" rel="noopener noreferrer">
-    <i class="fa fa-facebook-official w3-hover-opacity" id="facebook-link"></i>
+  <a href="https://facebook.com/your-profile" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
   </a> 
-  <a id="instagram-link" target="_blank" rel="noopener noreferrer">
-    <i class="fa fa-instagram w3-hover-opacity" id="instagram-link"></i>
+  <a href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-instagram w3-hover-opacity"></i>
   </a>
-  <a id="github-link" target="_blank" rel="noopener noreferrer">
-    <i class="fa fa-github w3-hover-opacity" id="github-link"></i>
+  <a href="https://github.com/Pappa-Padda" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-github w3-hover-opacity"></i>
   </a>
-  <a id="linkedin-link" target="_blank" rel="noopener noreferrer">
-    <i class="fa fa-linkedin w3-hover-opacity" id="linkedin-link"></i>
+  <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
   </a>
-  <a id="youtube-link" target="_blank" rel="noopener noreferrer">
-    <i class="fa fa-youtube w3-hover-opacity" id="youtube-link"></i>
+  <a href="https://youtube.com/your-channel" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-youtube w3-hover-opacity"></i>
   </a> 
   <p class="w3-small">Last updated: July 2025</p>
-  <p class="w3-small">Template inspired by <a href="https://www.w3schools.com/spaces" target="_blank" class="w3-hover-text-green">W3Schools Spaces</a></p>
+  <p class="w3-small">Template inspired by <a href="https://www.w3schools.com/spaces" target="_blank" class="w3-hover-text-green">W3Schools</a></p>
  <!-- End footer -->
 </footer>
 
 <!-- END PAGE CONTENT -->
 </div>
 
-<!-- Load JS links file -->
-<script src="assets/js/links.js"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("profile-pic").src = siteLinks.profilePic;
-    document.getElementById("github-link").href = siteLinks.github;
-    document.getElementById("linkedin-link").href = siteLinks.linkedin;
-    document.getElementById("email-link").href = siteLinks.email;
-    document.getElementById("instagram-link").href = siteLinks.instagram;
-    document.getElementById("youtube-link").href = siteLinks.youtube;
-    document.getElementById("facebook-link").href = siteLinks.facebook;
+// Experience toggle functionality
+function toggleExperience(element) {
+  const arrow = element.querySelector('.experience-toggle-arrow');
+  const body = element.nextElementSibling;
+  
+  body.classList.toggle('show');
+  arrow.classList.toggle('rotate');
+}
+
+// Skill Bar Animation
+function animateSkillBars() {
+  const bars = document.querySelectorAll('.skill-bar-fill');
+  bars.forEach(bar => {
+    const target = bar.getAttribute('data-width');
+    bar.style.width = target;
   });
-</script>
+}
 
-<!-- Toggle Sections -->
- <script>
-  // Skills toggle remains the same
-  document.querySelectorAll('.toggle-header').forEach(header => {
-    header.addEventListener('click', () => {
-      header.nextElementSibling.classList.toggle('show');
-    });
-  });
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return rect.top <= window.innerHeight && rect.bottom >= 0;
+}
 
-  // Toggle arrows for experience
-  document.querySelectorAll('.experience-title').forEach(title => {
-    const arrow = title.querySelector('.experience-toggle-arrow');
-    const body = title.nextElementSibling;
-
-    arrow.addEventListener('click', () => {
-      body.classList.toggle('show');
-      arrow.classList.toggle('rotate');
-    });
-  });
-</script>
-
-<!-- Skill Bar Animation -->
-<script>
-  function animateSkillBars() {
-    const bars = document.querySelectorAll('.skill-bar-fill');
-    bars.forEach(bar => {
-      const target = bar.getAttribute('data-width');
-      bar.style.width = target;
-    });
+function onScroll() {
+  const section = document.querySelector('#skills');
+  if (isInViewport(section)) {
+    animateSkillBars();
+    window.removeEventListener('scroll', onScroll);
   }
+}
 
-  function isInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return rect.top <= window.innerHeight && rect.bottom >= 0;
-  }
-
-  function onScroll() {
-    const section = document.querySelector('.skill-bar-fill');
-    if (isInViewport(section)) {
-      animateSkillBars();
-      window.removeEventListener('scroll', onScroll);
-    }
-  }
-
-  window.addEventListener('scroll', onScroll);
-  window.addEventListener('load', onScroll);
+window.addEventListener('scroll', onScroll);
+window.addEventListener('load', onScroll);
 </script>
-
-
 
 </body>
 </html>
