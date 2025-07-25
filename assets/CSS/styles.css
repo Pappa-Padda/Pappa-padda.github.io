@@ -15,7 +15,12 @@
 
 .bright-grey {
   color: #aaa;
-}  
+}
+
+audio {
+  width: 100%;
+  margin-top: 8px;
+}
 
 /* Experience Section Styles */
   .experience-title {
@@ -129,12 +134,12 @@
   }
 
 /* Footer Styles */
-footer a i {
+footer a li {
   font-size: 32px !important;         
-  margin: 0 8px;          
+  margin: 0 4px;          
   transition: transform 0.2s ease;
 }
 
-footer a i:hover {
+footer a li:hover {
   transform: scale(1.2);   
 }
