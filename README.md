@@ -6,4 +6,4 @@ This repository hosts the source code for my personal portfolio and resume websi
 
 ![Screenshot](https://github.com/Pappa-Padda/Pappa-padda.github.io/blob/main/assets/ProfilePic.png)
 
-https://roadmap.sh/projects/portfolio-website
+Progress on Roadmap.sh https://roadmap.sh/projects/portfolio-website
